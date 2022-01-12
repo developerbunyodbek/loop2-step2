@@ -1,57 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Loop 2 - Step 2</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-  <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
-  <main class="main-content">
-    <div class="container">
-      <div class="account">
-        <div class="header">
-          <p class="header-title">Account settings</p>
-          <svg height="13" width="13" class="close-icon">
-            <line x1="0" y1="0" x2="13" y2="13" style="stroke:black;stroke-width:2.1" />
-            <line x1="0" y1="13" x2="13" y2="0" style="stroke:black;stroke-width:2.1" />
-          </svg>
-        </div>
-        <div class="account-form">
-          <img class="account-image" src="./img/avatar.jpg" alt="Avatar">
-          <form class="contact-form">
-            <div class="form-field">
-              <label class="form-label" for="username">Username</label>
-              <input class="form-input" type="text" id="username" placeholder="Enter your username">
-            </div>
-            <div class="names">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loop 2 - Step 2</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <main class="main-content">
+      <div class="container">
+        <div class="account">
+          <div class="header">
+            <h1 class="header-title">Account settings</h1>
+            <svg height="13" width="13" class="close-icon">
+              <line
+                x1="0"
+                y1="0"
+                x2="13"
+                y2="13"
+                style="stroke: black; stroke-width: 2.1"
+              />
+              <line
+                x1="0"
+                y1="13"
+                x2="13"
+                y2="0"
+                style="stroke: black; stroke-width: 2.1"
+              />
+            </svg>
+          </div>
+          <div class="account-form">
+            <img class="account-image" src="./img/avatar.jpg" alt="Avatar" />
+            <form
+              class="contact-form"
+              action="https://echo.htmlacademy.ru"
+              method="POST"
+            >
               <div class="form-field">
-                <label class="form-label" for="first-name">First Name</label>
-                <input class="form-input" type="text" id="first-name" placeholder="Enter your first name">
+                <label class="form-label" for="username">Username</label>
+                <input
+                  class="form-input"
+                  type="text"
+                  name="email"
+                  id="username"
+                  placeholder="Enter your username"
+                  autocomplete="off"
+                  required
+                />
               </div>
-              <div class="last-name form-field">
-                <label class="form-label" for="last-name">Last Name</label>
-                <input class="form-input" type="text" id="last-name" placeholder="Enter your last name">
+              <div class="names">
+                <div class="form-field">
+                  <label class="form-label" for="first-name">First Name</label>
+                  <input
+                    class="form-input"
+                    type="text"
+                    name="first-name"
+                    id="first-name"
+                    placeholder="Enter your first name"
+                    autocomplete="off"
+                    required
+                  />
+                </div>
+                <div class="last-name form-field">
+                  <label class="form-label" for="last-name">Last Name</label>
+                  <input
+                    class="form-input"
+                    type="text"
+                    name="last-name"
+                    id="last-name"
+                    placeholder="Enter your last name"
+                    autocomplete="off"
+                    required
+                  />
+                </div>
               </div>
-            </div>
-            <div class="form-field">
-              <label class="form-label" for="email">Email</label>
-              <input class="form-input" type="email" id="email" placeholder="Enter your email">
-            </div>
-            <div class="form-field">
-              <label class="form-label" for="bio">Bio</label>
-              <textarea class="contact-textarea" id="bio" placeholder="Tell us about yourself"></textarea>
-            </div>
-          </form>
-        </div>
-        <div class="account-btns">
-          <input class="account-btns-cancel btn" type="reset" value="Cancel">
-          <input class="account-btns-submit btn" type="submit" value="Save">
+              <div class="form-field">
+                <label class="form-label" for="email">Email</label>
+                <input
+                  class="form-input"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Enter your email"
+                  autocomplete="off"
+                  required
+                />
+              </div>
+              <div class="form-field">
+                <label class="form-label" for="bio">Bio</label>
+                <textarea
+                  class="contact-textarea"
+                  name="massage"
+                  id="bio"
+                  placeholder="Tell us about yourself"
+                  autocomplete="off"
+                  required
+                ></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="account-btns">
+            <button class="account-btns-cancel btn" type="reset">Cancel</button>
+            <button class="account-btns-submit btn" type="reset">Submit</button>
+          </div>
         </div>
       </div>
-    </div>
-  </main>
-</body>
+    </main>
+  </body>
 </html>

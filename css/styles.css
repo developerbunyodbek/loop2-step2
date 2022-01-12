@@ -65,6 +65,11 @@ img {
   margin-bottom: 48px;
 }
 
+.header-title {
+  font-size: 20px;
+  font-weight: 400;
+}
+
 .close-icon {
   cursor: pointer;
   opacity: 0.5;
@@ -74,6 +79,7 @@ img {
 .close-icon:hover {
   opacity: 1;
 }
+
 .account-form {
   position: relative;
   background-color: var(--card-form-background-color);
